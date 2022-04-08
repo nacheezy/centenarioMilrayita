@@ -6,9 +6,169 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Centenario Milrayita</title>
 
+    <!-- agregar una miniatura para la foto en la pestaña -->
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/
+    azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Centenario Milrayita</h1>
+    <!-- barra navegacion inicio --> 
+    <header class="conteiner-fluid fotoindex">   
+        <nav class="navbar navbar-expand">
+            <div class="dropdown">
+                <button type="button" class="btn dropdown-toggle" id="darkbutton" data-bs-toggle="dropdown" aria-expanded="false"><img src="img/escudo2.jpg" alt=""></button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a href="" class="dropdown-item">Historia</a></li>
+                    <li><a href="" class="dropdown-item">Galeria</a></li>
+                    <li><a href="" class="dropdown-item">Camisetas</a></li>
+                    <li><a href="" class="dropdown-item">videos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- barra navegacion fin  -->
+
+    <!-- animacion inicio -->
+    <div class="contenedor-animacion">
+        <a href="#">
+            <img id="pelota" src="img/Basket-ball.png" alt="">
+        </a>
+    </div>
+    <!-- animacion fin -->
+
+    <!-- links a otras secciones inicio -->
+    <section class="menu">
+        <div class="historia">
+            <a href="">
+                <h4 class="fondotxt">HISTORIA</h4>
+            </a> 
+        </div>        
+        <div class="galeria">
+            <a href="">
+                <h4 class="fondotxt">GALERIA</h4>
+            </a>
+        </div>
+        <div class="camiseta">
+            <a href="">
+                <h4 class="fondotxt">CAMISETAS</h4>
+            </a>
+        </div>
+        <div class="videos">
+            <a href="">
+                <h4 class="fondotxt">VIDEOS</h4>
+            </a>
+        </div>
+    </section>
+    <!-- links a otras secciones fin -->
+    <div class="banner">
+        <h5>Centenario Milrayita</h5>
+        <div id="cuenta"></div>
+    </div>
+    <!-- Foto scroll y frases inicio  -->   
+    <section id="background">
+        <p class="p1">
+            "aca van frases historicas". <strong>nombre del autor</strong>
+        </p>
+        <p class="p2">
+            "aca van frases historicas". <strong>nombre del autor</strong>
+        </p>
+        <p class="p3">
+            "aca van frases historicas". <strong>nombre del autor</strong>
+        </p>
+    </section>
+<!-- Foto scroll y frases fin -->
+
+    <div class="jumbotron">
+        <h1>Bienvenidos a la Fan-Page del <br>Club Peñarol de Mar del Plata</h1>
+        <p> Aquí podras encontrar noticias, la historia del Milrayita, las mejores fotos y videos, sorteos y mucho más</p>
+    </div>
+        <!-- carousel incio -->
+    <div>
+        <h3 class="titulo">Proximos partidos</h3>
+    </div>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+            <img src="img/club.jpg" alt="foto del club">
+        </div>
+        <div class="item">
+            <img src="img/banner.jpg" alt="logo">
+        </div>
+        <div class="item">
+            <img src="img/codo.jpg" alt="hinchada">
+        </div>
+        </div>
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+<!-- carousel fin -->
+    </main>
+    <!-- footer inicio -->
+    <footer class="box">  
+        <ul>
+            <li><a href="" target="_blank"><img class="facebook" src="https://icongr.am/fontawesome/facebook-square.svg?size=30&color=ffffff" alt="facebook"></a></li>
+            <li><a href="" target="_blank"><img class="ig" src="https://icongr.am/fontawesome/instagram.svg?size=30&color=ffffff" alt="instagram"></a></li>
+            <li><a href="" target="_blank"><img class="twitter" src="https://icongr.am/fontawesome/twitter.svg?size=30&color=ffffff" alt="twitter"></a></li>
+            <li><a href="" target="_blank"><img class="youtube" src="https://icongr.am/fontawesome/youtube.svg?size=30&color=ffffff" alt="youtube"></a></li>
+        </ul>  
+        <p><small>Copyright - Todos los derechos reservados // Website made by Nacheenzy 🏀</small></p>    
+    </footer>
+    <!-- footer fin -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/simplyCountdown.min.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
 </body>
 </html>
