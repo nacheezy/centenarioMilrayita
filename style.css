@@ -30,10 +30,18 @@
 }
 /*****   index    *****/
 .fotoindex {
-  background-image: url(img/popularLlena.jpg);
+  background-image: url(img/club.jpg);
   background-position: center;
   background-size: cover;
   height: 600px;
+  width: 100%;
+}
+
+.escudo {
+  height: 150px;
+  position: absolute;
+  top: 1px;
+  left: 0px;
 }
 
 .dropdown {
@@ -48,7 +56,7 @@
   width: 700%;
   background-color: darkblue;
   border-radius: 10%;
-  margin-left: 600%;
+  margin-left: 300%;
 }
 .dropdown-menu a {
   width: 100%;
@@ -60,11 +68,54 @@
   background-color: #0195eb;
 }
 
-.conteiner-fluid {
-  width: 100%;
-  height: auto;
+#darkbutton {
+  color: white;
+  margin-left: 220%;
+  margin-top: 120%;
 }
 
+/***** fotos de inicio *****/
+.fotoindex {
+  background-image: url(img/club.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+}
+
+.fotoHistoria {
+  background-image: url(img/clubViejo.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 620px;
+  width: 100%;
+}
+
+.fotoCamiseta {
+  background-image: url(img/camisetaRetro.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 630px;
+  width: 100%;
+}
+
+.fotoGaleria {
+  background-image: url(img/facuCampazzo.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 620px;
+  width: 100%;
+}
+
+.fotoVideo {
+  background-image: url(img/leoGutierrez.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 620px;
+  width: 100%;
+}
+
+/*****  seccion de menu *****/
 .menu {
   width: 100%;
   height: 500%;
@@ -76,21 +127,24 @@
   text-align: center;
   align-items: center;
   align-content: center;
-  width: 100%;
+  width: 75%;
 }
-.menu a:hover {
+.menu a :hover {
   color: #53aecc;
+  transform: scale(1.1);
+  transition: all 1s;
 }
 .menu .fondotxt {
   text-align: center;
   align-items: center;
   text-shadow: 5px 5px 3px black;
-  font-size: 40px;
+  font-size: 45px;
   font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
 
 .inicio {
-  background-image: url();
+  background-image: url(img/club.jpg);
   width: 100%;
   height: 70vh;
   background-position: center;
@@ -134,10 +188,12 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-}
-.historia :hover {
-  transform: scale(1.1);
-  transition: all 1s;
+  background-color: black;
+  max-width: 100%;
+  /* :hover{
+      transform: scale(1.1);
+      transition: all 1s;
+  } */
 }
 
 .camiseta {
@@ -189,6 +245,12 @@
   font-size: 50px;
 }
 
+.banner2 {
+  background-color: darkblue;
+  width: 100%;
+  height: 100px;
+}
+
 /**** cuenta regresiva ****/
 #cuenta {
   display: flex;
@@ -220,6 +282,7 @@
   font-size: 20px;
 }
 
+/***** sector scroll  *****/
 #background {
   background-image: url(img/escudo.jpg);
   background-repeat: no-repeat;
@@ -262,6 +325,21 @@
   color: black !important;
 }
 
+.publicidad {
+  background-color: red;
+  width: 100%;
+  height: 200px;
+}
+
+.publicidadChico {
+  background-color: lightblue;
+  margin-top: 5%;
+  width: 300px;
+  height: 400px;
+  display: inline-block;
+  margin: 70px;
+}
+
 .titulo {
   background-color: darkblue;
   text-align: center;
@@ -270,7 +348,26 @@
   margin-top: 50px;
 }
 
-.carousel {
+/***** carousel *****/
+.carousel-item {
+  height: 35rem;
+  background: #0195eb;
+  background-size: cover;
+  background-position: center;
+}
+.carousel-item h5 {
+  color: white;
+  text-shadow: black 5px 5px 5px;
+  font-size: 50px;
+  background-color: rgba(83, 174, 204, 0.5);
+}
+.carousel-item p {
+  font-size: 25px;
+  background-color: rgba(83, 174, 204, 0.5);
+  text-shadow: black 5px 5px 5px;
+}
+
+#miCarousel {
   margin-bottom: 50px;
 }
 
@@ -283,6 +380,7 @@
   flex-direction: column;
   justify-content: space;
   align-items: center;
+  margin-top: 20px;
 }
 
 ul {
@@ -300,6 +398,260 @@ p {
   color: white;
   text-align: center;
   font-family: "Roboto", sans-serif;
+}
+
+/***** Seccion GALERIA *****/
+h2 {
+  font-weight: 400;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 40px;
+}
+
+.linea {
+  background: darkblue;
+  height: 5px;
+  width: 100%;
+  display: block;
+}
+
+.fotos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  width: 95%;
+  margin: auto;
+  grid-gap: 10px;
+  padding: 40px 0;
+  overflow: hidden;
+}
+.fotos img {
+  width: 100%;
+  vertical-align: top;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+.fotos a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+.fotos a :hover {
+  transform: rotate(10deg) scale(1.5);
+}
+
+.light-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/*****  Historia *****/
+.fotoBiografia {
+  background-image: url();
+  background-position-y: 35%;
+  background-size: cover;
+  height: 600px !important;
+}
+
+.mainbio {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+#title-bio {
+  color: darkblue;
+  padding: 5%;
+  font-size: 500%;
+  position: sticky;
+  text-align: center;
+}
+
+.conteiner-all {
+  margin-bottom: 20%;
+}
+.conteiner-all img {
+  width: 500px;
+  float: left;
+  margin-left: 10%;
+  border-radius: 45%;
+  margin-right: 10%;
+  border: solid darkblue 5px;
+}
+
+.txt1 {
+  text-align: right;
+  margin-left: 20%;
+  margin-right: 5%;
+  padding-top: 5%;
+  border-bottom: solid darkblue 5px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: black;
+}
+
+.conteiner2 img {
+  width: 50%;
+  float: right;
+  margin-right: 5%;
+  border: solid darkblue 5px;
+  margin-left: 3%;
+  margin-bottom: 10%;
+}
+
+.txt2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  text-align: left;
+  padding-top: 15%;
+  padding-right: 0%;
+  margin-left: 5%;
+  border-bottom: solid darkblue 5px;
+  margin-right: 40%;
+  color: black;
+}
+
+.conteiner3 img {
+  width: 600px;
+  float: left;
+  margin-left: 5%;
+  border-radius: 30%;
+  margin-right: 10%;
+  border: solid darkblue 5px;
+}
+
+.txt3 {
+  text-align: right;
+  margin-left: 30%;
+  margin-right: 5%;
+  padding-top: 15%;
+  border-bottom: solid darkblue 5px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: black;
+}
+
+#conteiner4 img {
+  width: 35%;
+  float: right;
+  margin-right: 5%;
+  margin-top: 10%;
+  margin-left: 5%;
+  border: solid darkblue 5px;
+}
+
+.txt4 {
+  text-align: left;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 30%;
+  border-bottom: solid darkblue 5px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: black;
+}
+
+.conteiner5 img {
+  width: 50%;
+  float: right;
+  margin-top: 5%;
+  margin-right: 23%;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  border: solid darkblue 5px;
+}
+
+.txt5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  text-align: left;
+  padding-top: 35%;
+  margin-left: 3%;
+  border-bottom: solid darkblue 5px;
+  margin-right: 50%;
+  color: black;
+}
+
+.conteiner6 img {
+  width: 50%;
+  float: right;
+  margin-right: 5%;
+  margin-top: 5%;
+  border: solid darkblue 5px;
+  margin-left: 3%;
+}
+
+.txt6 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  text-align: left;
+  padding-top: 10%;
+  margin-left: 5%;
+  border-bottom: solid darkblue 5px;
+  margin-right: 40%;
+  color: black;
+}
+
+.conteiner7 img {
+  width: 74%;
+  position: relative;
+  left: 10%;
+  margin-top: 3%;
+  margin-right: 23%;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  border: solid darkblue 5px;
+}
+
+.txt7 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  text-align: top;
+  padding-top: 30%;
+  margin-left: 20%;
+  border-bottom: solid darkblue 5px;
+  color: black;
+}
+
+.txt7b {
+  text-align: end;
+  padding-top: 0%;
+  border-bottom: solid darkblue 5px;
+  margin-right: 40%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: black;
+}
+
+.conteiner8 img {
+  width: 50%;
+  float: right;
+  margin-right: 5%;
+  margin-top: 5%;
+  border: solid darkblue 5px;
+  margin-left: 3%;
+  margin-bottom: 20%;
+}
+
+.txt8 {
+  text-align: left;
+  padding-top: 25%;
+  margin-left: 5%;
+  border-bottom: solid darkblue 5px;
+  margin-right: 40%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: black;
+}
+
+.txtfinal {
+  padding-top: 15%;
+  margin-left: 55%;
+  margin-bottom: 15px;
+  border-bottom: solid darkblue 5px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
